@@ -39,13 +39,21 @@ namespace NationalTeam.WebApi.Controllers
             return "Vai JANJONSON!!!!";
         }
 
+        
         [Route("api/[controller]/hackerapi")]
         [HttpGet]
         public string MyFirstAPI()
-        {
-            return "\tYou're HACKED!\nDonate 1 Bitcoin in Account: 4002-8922 to unlock all your services!";
+        { 
+                Console.ForegroundColor = ConsoleColor.Red;
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("\tYou're Hacked!!\n", Console.ForegroundColor);
+            }
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Donate 1 Bitcoin in Account: 4002-8922 to unlock all your services!", Console.ForegroundColor);
+            return "HAHAHAHA";
         }
-
+        
         [Route("api/[controller]/teste")]
         [HttpGet]
         public string Teste()
