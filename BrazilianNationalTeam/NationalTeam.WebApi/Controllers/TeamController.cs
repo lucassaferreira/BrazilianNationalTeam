@@ -39,11 +39,11 @@ namespace NationalTeam.WebApi.Controllers
             return "Vai JANJONSON!!!!";
         }
 
-        [Route("api/[controller]/myfirstapi")]
+        [Route("api/[controller]/hackerapi")]
         [HttpGet]
         public string MyFirstAPI()
         {
-            return "Hackerman!!!!";
+            return "\tYou're HACKED!\nDonate 1 Bitcoin in Account: 4002-8922 to unlock all your services!";
         }
 
         [Route("api/[controller]/teste")]
